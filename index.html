@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <h2 id="value">0</h2>
+  <button onclick="add()">+</button>
+  <button onclick="sub()">-</button>
+  <button onclick="reset()">Reset</button>
+
+  <script>
+    const add = () => {
+      let value = document.getElementById('value').innerText;
+      let newValue = parseInt(value) + 1;
+      document.getElementById('value').innerText = newValue;
+    }
+
+    const reset = () => {
+      let value = document.getElementById('value').innerText;
+      let newValue = "0";
+      document.getElementById('value').innerText = newValue;
+    }
+
+    const sub = () => {
+      let value = document.getElementById('value').innerText;
+      let newValue = parseInt(value) - 1;
+      document.getElementById('value').innerText = newValue;
+    }
+  </script>
+</body>
+</html>
+
